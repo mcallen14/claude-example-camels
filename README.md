@@ -1,4 +1,4 @@
-# CAMELS HBV Quickstart
+# Claude Example: CAMELS
 
 A small teaching sandbox for learning to use **Claude Code** on real scientific
 Python work — not a research project in its own right. It calibrates a lumped
