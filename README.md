@@ -48,6 +48,3 @@ this data beyond this teaching sandbox, cite:
 - Addor, N., Newman, A. J., Mizukami, N., & Clark, M. P. (2017). The CAMELS
   data set: catchment attributes and meteorology for large-sample studies.
   *Hydrology and Earth System Sciences*, 21(10), 5293–5313.
-
-*(Exact bibliographic details above should be double-checked against the
-original sources before this repo is made public.)*
