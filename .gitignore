@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+data/*_params.csv
+data/*_hydrograph.png
+.pytest_cache/

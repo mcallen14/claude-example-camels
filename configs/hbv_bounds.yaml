@@ -1,0 +1,34 @@
+# HBV parameter bounds, passed to scipy.optimize.differential_evolution.
+# Same parameter set and bounds as the lab's real local_HBV model, as currently
+# used in the "full_v1_params3" iteration: base bounds from
+# src/models/hbv_params.py, with 11 of 20 parameters overridden by
+# configs/defaults_full_v1_params3.yaml's literature-matched (hydromad/hydrodl2)
+# bounds revision. Order matters -- must match src/models/hbv.py's
+# HBV_PARAM_NAMES.
+
+bounds:
+  fc:        [50.0, 1000.0]   # maximum soil moisture storage (field capacity) [mm]
+  beta:      [1.0, 6.0]       # shape coefficient governing runoff generation [-]
+  pwp:       [0.01, 0.99]     # permanent wilting point as fraction of fc [-]
+  l:         [0.0, 100.0]     # upper-storage threshold for surface flow [mm]
+  ks:        [0.05, 0.9]      # recession constant, upper storage near-surface [1/day]
+  ki:        [0.01, 0.99]     # recession constant, upper storage interflow [1/day]
+  kb:        [0.001, 0.2]     # recession constant, lower storage baseflow [1/day]
+  kperc:     [0.0001, 0.99]   # percolation rate, upper to lower storage [1/day]
+  coeff_pet: [0.5, 2.0]       # PET scaling coefficient: actual_PET = coeff_pet * pet_base [-]
+  ddf:       [0.5, 10.0]      # degree-day melt factor [mm/degC/day]
+  scf:       [0.4, 1.0]       # snowfall correction factor [-]
+  ts:        [-2.5, 2.5]      # threshold temperature for snow [degC]
+  tm:        [-2.5, 2.5]      # threshold temperature for snowmelt [degC]
+  tti:       [0.1, 4.0]       # temperature interval for rain-snow mixture [degC]
+  whc:       [0.0, 0.2]       # liquid water holding capacity of snowpack [-]
+  crf:       [0.0, 0.1]       # refreezing coefficient [-]
+  d_shape:   [1.0, 4.0]       # direct-runoff gamma routing shape [-]
+  d_scale:   [0.5, 4.0]       # direct-runoff gamma routing scale [days]
+  b_shape:   [1.0, 6.0]       # baseflow gamma routing shape [-]
+  b_scale:   [1.0, 7.0]       # baseflow gamma routing scale [days]
+
+calibration:
+  seed: 42
+  maxiter: 100
+  popsize: 15
