@@ -11,6 +11,10 @@ in it represents a real research finding — it exists purely so you can safely
 practice a Claude Code workflow (investigate → plan → implement → test →
 review → commit) on something real enough to be interesting.
 
+## Part of a larger guide
+
+This repo pairs with **[Claude Code for Research](https://github.com/mcallen14/claude-code-for-research/wiki)**, a broader guide to using Claude Code well for scientific computing and research software development. Start there for the conceptual background and a step-by-step walkthrough of this repo, or just dive in directly below if you'd rather learn by doing.
+
 ## What's here
 
 - `src/models/hbv.py` — a single-unit lumped HBV model (NumPy only).
