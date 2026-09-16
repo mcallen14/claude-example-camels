@@ -30,5 +30,5 @@ bounds:
 
 calibration:
   seed: 42
-  maxiter: 100
+  maxiter: 20    # lowered for fast live-demo runs; increase to e.g. 100 for better calibration
   popsize: 15
